@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mohammed Ismail - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, showcasing professional experience, skills, and live projects.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design**: Clean, professional design with smooth animations using Framer Motion
+- **Responsive**: Fully responsive design that works on all devices
+- **Performance**: Optimized for fast loading and smooth scrolling
+- **SEO Optimized**: Meta tags and semantic HTML for better search engine visibility
+- **Deployment Ready**: Configured for easy deployment on Vercel
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 📂 Project Structure
+
+```
+portfolio-website/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main page combining all sections
+│   └── globals.css         # Global styles and animations
+├── components/
+│   ├── Navbar.tsx          # Navigation bar with smooth scroll
+│   ├── Hero.tsx            # Hero section with introduction
+│   ├── About.tsx           # About section with education & certifications
+│   ├── Experience.tsx      # Professional experience timeline
+│   ├── Skills.tsx          # Technical skills showcase
+│   ├── Projects.tsx        # Featured projects with live links
+│   ├── Contact.tsx         # Contact information and CTA
+│   └── Footer.tsx          # Footer with social links
+├── data/
+│   └── portfolio.ts        # Portfolio data (easily editable)
+└── public/                 # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ 
+- npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Install dependencies:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deploy on Vercel
+## 📝 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+All portfolio data is centralized in `data/portfolio.ts`. You can easily update:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Personal information
+- Skills and technologies
+- Work experience
+- Projects
+- Education and certifications
+- Contact details
+
+## 🌐 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+
+2. Go to [Vercel](https://vercel.com) and click "New Project"
+
+3. Import your GitHub repository
+
+4. Vercel will automatically detect Next.js - Click "Deploy"
+
+Your portfolio will be live in minutes at a vercel.app URL!
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 📱 Sections
+
+1. **Hero**: Eye-catching introduction with CTA buttons
+2. **About**: Professional summary, education, certifications, and achievements
+3. **Experience**: Timeline of professional experience with detailed descriptions
+4. **Skills**: Categorized technical skills (Backend, Frontend, Databases, Security, Tools, AI/ML)
+5. **Projects**: 3 live featured projects with detailed tech stacks
+6. **Contact**: Multiple contact methods and availability status
+7. **Footer**: Quick navigation and social media links
+
+## 🎨 Design Features
+
+- Smooth scroll navigation
+- Animated elements on scroll (Intersection Observer)
+- Gradient backgrounds and text
+- Interactive hover effects
+- Mobile-friendly hamburger menu
+- Custom scrollbar styling
+- Blob animations in hero section
+
+## 👤 Author
+
+**Mohammed Ismail**
+- Backend-Focused Software Engineer
+- Email: shaikhismail1104@gmail.com
+- LinkedIn: [MOHAMMED-ISMAIL](https://www.linkedin.com/in/mohammed-ismail)
+- GitHub: [ismail-1104](https://github.com/ismail-1104)
+
+## 📄 Live Projects Featured
+
+1. **DETR - Pest Detection & Prediction System** - AI-powered agricultural pest detection
+2. **Resume Analyzer** - AI-powered recruitment tool with NLP
+3. **Bloggy** - Full-stack MERN blog platform
+
+---
+
+Built with ❤️ using Next.js & Tailwind CSS
