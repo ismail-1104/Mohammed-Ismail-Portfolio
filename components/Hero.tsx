@@ -65,6 +65,14 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
+              href="/Mohammed_Ismail_Resume.pdf"
+              download="Mohammed_Ismail_Backend_Developer_UAE.pdf"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-bold shadow-2xl hover:shadow-blue-500/50 transform hover:scale-105 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
+            >
+              <span className="relative z-10">Download Resume</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a
               href="#contact"
               className="group px-8 py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-purple-400/50 rounded-xl font-bold shadow-xl hover:bg-white/20 hover:border-purple-400 transform hover:scale-105 transition-all duration-300 hover:-translate-y-1"
             >

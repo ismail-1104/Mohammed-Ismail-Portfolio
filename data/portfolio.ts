@@ -1,13 +1,13 @@
 export const personalInfo = {
   name: "Mohammed Ismail",
-  title: "Backend-Focused Software Engineer",
-  summary: "Backend Software Engineer with experience designing, modernizing, and scaling enterprise-grade systems using Java and Spring Boot.\n\nStrong background in microservices architecture, scalable backend services, database-driven applications, and performance-focused system design within enterprise environments.\n\nExperienced as a backend-focused full-stack engineer, having built and contributed to frontend platforms using React and Next.js to improve development velocity, consistency, and security across teams.\n\nComfortable working on platform-level engineering, system modernization, authentication/authorization (OAuth2, RBAC), and cross-functional collaboration in large, distributed teams.\n\nActively open to backend and backend-focused full-stack roles in UAE. Open to relocation to the UAE | Available for remote interviews. Interested in opportunities within enterprise, platform, or product-driven engineering teams.",
+  title: "Backend-Focused Full Stack Software Engineer",
+  summary: "Backend-Focused Full Stack Software Engineer with 2+ years of professional experience specializing in designing, modernizing, and scaling enterprise-grade systems using Java and Spring Boot.\n\nProven expertise in building high-performance microservices architectures, RESTful APIs, scalable backend services, and database-driven applications for enterprise environments. Strong background in system design, performance optimization, and delivering maintainable solutions that support business-critical operations.\n\nExperienced in full-stack development with backend focus, having built internal enterprise frontend platforms using React and Next.js to standardize UI development, enhance security, and improve development velocity across distributed teams.\n\nSkilled in authentication and authorization systems (OAuth2, OIDC, JWT, RBAC), platform-level engineering, legacy system modernization, and cross-functional collaboration within multicultural, international teams.\n\nActively seeking backend or backend-focused full-stack software engineering roles in the UAE (Dubai, Abu Dhabi, Sharjah). Ready to relocate immediately with valid passport and open to visa sponsorship. Available for remote or in-person interviews. Targeting opportunities within enterprise, fintech, SaaS, and product-driven engineering organizations across the GCC region.",
   email: "shaikhismail1104@gmail.com",
   phone: "+91-7718088144",
   linkedin: "https://www.linkedin.com/in/mohammed-ismail-shaikh-649034213",
   github: "https://github.com/ismail-1104",
-  location: "Mumbai, India",
-  availability: "Open to opportunities in UAE and internationally"
+  location: "Mumbai, India | Relocating to UAE",
+  availability: "Immediately available | Open to relocation to UAE/GCC | Visa sponsorship welcome"
 };
 
 export const skills = {
@@ -76,7 +76,7 @@ export const experience = [
       "Winner – Accelya Global Ideathon, proposing a blockchain-based enterprise solution for airline clients",
       "Conducted proof-of-concepts on AI-assisted development tools including GitHub Copilot, Cursor, and Windsurf"
     ],
-    technologies: ["Java", "Spring Boot", "Microservices", "Next.js", "React", "TypeScript", "Oracle", "PostgreSQL", "OAuth2", "JWT"]
+    technologies: ["Java", "Spring Boot", "Microservices", "Next.js", "React", "TypeScript", "Oracle", "PostgreSQL", "OAuth2", "JWT", "RBAC"]
   },
   {
     title: "Python And Machine Learning Developer",
@@ -89,7 +89,7 @@ export const experience = [
       "Developed AI dashboards with real-time object detection using YOLOv8 / YOLO NAS, achieving 95%+ accuracy",
       "Worked on LLM-based analytics and speech-to-text systems using DeepSpeech"
     ],
-    technologies: ["Python", "TensorFlow", "PyTorch", "YOLOv8", "Machine Learning", "Deep Learning", "DeepSpeech"]
+    technologies: ["Python", "TensorFlow", "PyTorch", "YOLOv8", "Machine Learning", "Deep Learning", "DeepSpeech", "Computer Vision"]
   },
   {
     title: "Web Developer",
@@ -101,62 +101,63 @@ export const experience = [
       "Implemented REST APIs for user registration, authentication, admin workflows, and data management",
       "Contributed to frontend development for end-to-end feature delivery"
     ],
-    technologies: ["Node.js", "MongoDB", "REST APIs", "Authentication", "Express.js"]
+    technologies: ["Node.js", "MongoDB", "REST APIs", "Authentication", "Express.js", "Full Stack Development"]
   }
 ];
 
 export const projects = [
   {
-    title: "DETR - Pest Detection & Prediction System",
-    description: "A modern full-stack web application for agricultural pest detection and prediction using AI/ML models. Features real-time AI-powered pest detection using YOLO model with image upload and annotated results, pest prediction based on environmental factors, and weekly forecasts.",
+    title: "DETR - Enterprise Pest Detection & Prediction System",
+    description: "Scalable full-stack AI/ML-powered web application for agricultural pest detection and prediction. Built with modern enterprise architecture featuring real-time object detection using YOLO deep learning models, predictive analytics based on environmental data, and responsive frontend with optimized performance. Demonstrates expertise in integrating machine learning models with production-ready backend APIs and modern frontend frameworks.",
     liveLink: "https://detr-pest-prediction.vercel.app/",
     technologies: {
-      frontend: ["Next.js 14.2.5", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
-      backend: ["Flask 3.1.2", "Python 3.14", "YOLO (Ultralytics 8.3.235)", "scikit-learn 1.7.2", "OpenCV"]
+      frontend: ["Next.js 14.2.5", "TypeScript", "Tailwind CSS", "Framer Motion", "Responsive Design"],
+      backend: ["Flask 3.1.2", "Python 3.14", "YOLO (Ultralytics 8.3.235)", "scikit-learn 1.7.2", "OpenCV", "RESTful APIs"]
     },
     features: [
-      "Real-time AI-powered pest detection using YOLO model",
-      "Pest outbreak prediction based on environmental factors",
-      "Weekly pest forecasts",
-      "Image upload and annotated results"
+      "Real-time AI-powered pest detection using YOLO deep learning model with 90%+ accuracy",
+      "Predictive analytics engine for pest outbreak forecasting based on environmental factors",
+      "Scalable REST API architecture for seamless frontend-backend integration",
+      "Weekly pest forecasts with data visualization for decision-making support",
+      "Optimized image processing pipeline with annotated results"
     ],
     image: "/projects/pest-detection.jpg"
   },
   {
-    title: "Resume Analyzer - AI-Powered Recruitment Tool",
-    description: "AI-powered resume analysis system with NLP, entity extraction, skills assessment, and candidate recommendations using machine learning. Features PDF processing, entity extraction, comprehensive visual analytics with 4-chart dashboard, and AI-powered candidate matching.",
+    title: "TalentInsight AI - Enterprise Recruitment Intelligence Platform",
+    description: "Production-ready AI-powered resume analysis and candidate matching system designed for enterprise recruitment workflows. Features advanced NLP for entity extraction, intelligent skills assessment, comprehensive analytics dashboard, and AI-driven candidate recommendations. Demonstrates expertise in building scalable data processing systems with machine learning integration for business-critical applications.",
     liveLink: "https://talentinsightai.up.railway.app/",
     technologies: {
-      backend: ["Flask 2.3.2", "spaCy 3.6.0", "pandas 2.0.3", "PyPDF2 3.0.1", "Gunicorn 21.2.0"],
-      frontend: ["Tailwind CSS", "Alpine.js", "Font Awesome 6"],
-      ml: ["Cosine Similarity", "spaCy NLP", "matplotlib 3.7.2"]
+      backend: ["Flask 2.3.2", "spaCy 3.6.0 (NLP)", "pandas 2.0.3", "PyPDF2 3.0.1", "Gunicorn 21.2.0 (Production Server)"],
+      frontend: ["Tailwind CSS", "Alpine.js", "Font Awesome 6", "Responsive Design"],
+      ml: ["Cosine Similarity Algorithm", "spaCy NLP Pipeline", "matplotlib 3.7.2", "Data Analytics"]
     },
     features: [
-      "PDF processing and text extraction",
-      "Entity extraction (names, organizations, locations, dates)",
-      "Technical and soft skills assessment",
-      "4-chart dashboard with comprehensive visualizations",
-      "AI-powered candidate recommendations using cosine similarity",
-      "Bulk resume processing capabilities"
+      "Automated PDF processing and intelligent text extraction from resumes",
+      "Advanced entity extraction using NLP (names, organizations, locations, dates)",
+      "Technical and soft skills assessment with scoring algorithms",
+      "Enterprise-grade analytics dashboard with 4-chart comprehensive visualizations",
+      "AI-powered candidate recommendations using cosine similarity matching",
+      "Bulk resume processing for high-volume recruitment scenarios"
     ],
     image: "/projects/resume-analyzer.jpg"
   },
   {
-    title: "Bloggy - Full-Stack Blog Platform",
-    description: "A full-stack blog application built with the MERN stack allowing users to create, edit, and share blog posts. Features secure user authentication, rich text editor, image uploads, category management, and customizable user profiles with a modern, responsive UI.",
+    title: "Bloggy - Full-Stack Content Management Platform",
+    description: "Scalable full-stack blog platform built with MERN stack demonstrating enterprise-level authentication, data management, and modern UI/UX principles. Features secure user authentication, rich content editing, media management, and role-based content organization. Showcases expertise in building production-ready web applications with modern frontend frameworks and robust backend architecture.",
     liveLink: "https://bloggy-live-app.onrender.com/",
     technologies: {
-      frontend: ["React 18.2.0", "React Router DOM 6.4.4", "Axios", "CSS3"],
-      backend: ["Node.js", "Express.js 4.18.2", "MongoDB", "Mongoose 6.7.5", "bcrypt", "Multer"]
+      frontend: ["React 18.2.0", "React Router DOM 6.4.4", "Axios (HTTP Client)", "CSS3", "Responsive Design"],
+      backend: ["Node.js", "Express.js 4.18.2", "MongoDB (NoSQL Database)", "Mongoose 6.7.5", "bcrypt (Password Hashing)", "Multer (File Upload)"]
     },
     features: [
-      "Secure user authentication with bcrypt password hashing",
-      "Rich text editor for blog post creation",
-      "Image upload and management",
-      "Category-based post organization",
-      "Customizable user profiles",
-      "Filter posts by user or category",
-      "Fully responsive design"
+      "Secure user authentication with bcrypt password hashing and session management",
+      "Rich text editor for professional blog post creation and content management",
+      "Scalable image upload and media management system using Multer",
+      "Category-based content organization for improved discoverability",
+      "Customizable user profiles with role-based access control",
+      "Advanced filtering: posts by user, category, and search functionality",
+      "Fully responsive design optimized for all devices"
     ],
     image: "/projects/bloggy.jpg"
   }
