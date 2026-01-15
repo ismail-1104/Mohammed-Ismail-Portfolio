@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, Briefcase } from 'lucide-react';
+import { GraduationCap, Award, Briefcase, Target } from 'lucide-react';
 import { personalInfo, education, certifications, achievements } from '@/data/portfolio';
 
 export default function About() {
@@ -26,6 +26,29 @@ export default function About() {
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
         </motion.div>
+
+        {/* For Recruiters Section */}
+        {'recruiterSummary' in personalInfo && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="max-w-4xl mx-auto mb-12"
+          >
+            <div className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 backdrop-blur-xl rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-green-500/30">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+                  <Target className="w-5 h-5 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white">For Recruiters</h3>
+              </div>
+              <p className="text-base md:text-lg text-gray-200 leading-relaxed">
+                {personalInfo.recruiterSummary}
+              </p>
+            </div>
+          </motion.div>
+        )}
 
         {/* Professional Summary */}
         <motion.div

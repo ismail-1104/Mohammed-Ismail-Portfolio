@@ -1,7 +1,8 @@
 export const personalInfo = {
   name: "Mohammed Ismail",
-  title: "Backend-Focused Full Stack Software Engineer",
-  summary: "Backend-Focused Full Stack Software Engineer with 2+ years of professional experience specializing in designing, modernizing, and scaling enterprise-grade systems using Java and Spring Boot.\n\nProven expertise in building high-performance microservices architectures, RESTful APIs, scalable backend services, and database-driven applications for enterprise environments. Strong background in system design, performance optimization, and delivering maintainable solutions that support business-critical operations.\n\nExperienced in full-stack development with backend focus, having built internal enterprise frontend platforms using React and Next.js to standardize UI development, enhance security, and improve development velocity across distributed teams.\n\nSkilled in authentication and authorization systems (OAuth2, OIDC, JWT, RBAC), platform-level engineering, legacy system modernization, and cross-functional collaboration within multicultural, international teams.\n\nActively seeking backend or backend-focused full-stack software engineering roles in the UAE (Dubai, Abu Dhabi, Sharjah). Ready to relocate immediately with valid passport and open to visa sponsorship. Available for remote or in-person interviews. Targeting opportunities within enterprise, fintech, SaaS, and product-driven engineering organizations across the GCC region.",
+  title: "Backend Software Engineer",
+  recruiterSummary: "Backend-focused engineer specializing in Java, Spring Boot, and enterprise microservices. Currently at Accelya modernizing aviation systems. Proven track record migrating legacy applications to scalable Spring Boot architectures (~40% performance improvement), building secure REST APIs, and delivering production-ready backend systems integrated with Oracle/PostgreSQL. Strong expertise in OAuth2, JWT, RBAC, and clean architecture. Seeking backend or backend-focused full-stack roles in UAE. Immediately available for relocation.",
+  summary: "Backend-focused Software Engineer with professional experience building and modernizing enterprise-grade systems using Java and Spring Boot at Accelya. Specialized in designing scalable microservices architectures, RESTful APIs, and database-driven backend services for business-critical operations.\n\nProven expertise in legacy system modernization, having migrated C#/.NET applications to Spring Boot microservices with measurable performance improvements. Strong background in implementing secure authentication systems (OAuth2, OIDC, JWT, RBAC) and building maintainable backend solutions following clean architecture principles.\n\nExperienced in full-stack development with backend focus, having contributed to internal enterprise frontend platforms using Next.js and React to standardize development and improve team productivity.\n\nActively seeking backend or backend-focused full-stack software engineering roles in the UAE (Dubai, Abu Dhabi, Sharjah). Immediately available for relocation with valid passport. Open to visa sponsorship. Available for remote or in-person interviews. Targeting opportunities within enterprise, fintech, aviation, SaaS, and product-driven organizations across the GCC region.",
   email: "shaikhismail1104@gmail.com",
   phone: "+91-7718088144",
   linkedin: "https://www.linkedin.com/in/mohammed-ismail-shaikh-649034213",
@@ -107,59 +108,151 @@ export const experience = [
 
 export const projects = [
   {
-    title: "DETR - Enterprise Pest Detection & Prediction System",
-    description: "Scalable full-stack AI/ML-powered web application for agricultural pest detection and prediction. Built with modern enterprise architecture featuring real-time object detection using YOLO deep learning models, predictive analytics based on environmental data, and responsive frontend with optimized performance. Demonstrates expertise in integrating machine learning models with production-ready backend APIs and modern frontend frameworks.",
-    liveLink: "https://detr-pest-prediction.vercel.app/",
+    title: "Accelya Next.js Framework (ANF)",
+    subtitle: "Internal Enterprise Platform | Non-Public",
+    category: "Enterprise Backend & Platform Engineering",
+    description: "Enterprise-grade internal frontend framework built to standardize UI development, enhance security, and accelerate delivery across distributed engineering teams at Accelya. Led backend integration architecture including authentication, authorization, and core master utilities.",
+    problem: "Multiple teams were building frontend applications independently with inconsistent patterns, duplicated authentication logic, and varying security implementations. This resulted in slow development cycles, security inconsistencies, and high maintenance overhead.",
+    solution: "Architected and built a centralized Next.js/React/TypeScript framework with reusable templates, standardized authentication flows using OAuth2/OIDC, JWT-based session management, and role-based UI access control (RBAC). Designed core backend integration utilities and API client patterns for seamless microservices communication.",
+    impact: "Reduced frontend development effort by approximately 70% across teams. Standardized security implementation organization-wide. Enabled faster time-to-market for new internal applications. Framework adopted as official standard for new frontend projects.",
     technologies: {
-      frontend: ["Next.js 14.2.5", "TypeScript", "Tailwind CSS", "Framer Motion", "Responsive Design"],
-      backend: ["Flask 3.1.2", "Python 3.14", "YOLO (Ultralytics 8.3.235)", "scikit-learn 1.7.2", "OpenCV", "RESTful APIs"]
+      backend: ["OAuth2 / OpenID Connect (OIDC)", "JWT Token Management", "Role-Based Access Control (RBAC)", "Spring Boot Integration"],
+      frontend: ["Next.js", "React", "TypeScript", "Reusable Component Library"],
+      security: ["Authentication Architecture", "Authorization Middleware", "Session Management", "Token Validation"]
     },
     features: [
-      "Real-time AI-powered pest detection using YOLO deep learning model with 90%+ accuracy",
-      "Predictive analytics engine for pest outbreak forecasting based on environmental factors",
-      "Scalable REST API architecture for seamless frontend-backend integration",
-      "Weekly pest forecasts with data visualization for decision-making support",
-      "Optimized image processing pipeline with annotated results"
+      "Centralized OAuth2/OIDC authentication with enterprise SSO integration",
+      "JWT-based session management with automatic token refresh",
+      "Fine-grained role-based access control (RBAC) at UI level",
+      "Reusable master utilities for API communication and data handling",
+      "Standardized templates for rapid application scaffolding",
+      "~70% reduction in frontend development time for internal tools"
     ],
-    image: "/projects/pest-detection.jpg"
+    liveLink: null,
+    isInternal: true
   },
   {
-    title: "TalentInsight AI - Enterprise Recruitment Intelligence Platform",
-    description: "Production-ready AI-powered resume analysis and candidate matching system designed for enterprise recruitment workflows. Features advanced NLP for entity extraction, intelligent skills assessment, comprehensive analytics dashboard, and AI-driven candidate recommendations. Demonstrates expertise in building scalable data processing systems with machine learning integration for business-critical applications.",
-    liveLink: "https://talentinsightai.up.railway.app/",
+    title: "Legacy System Migration to Spring Boot Microservices",
+    subtitle: "Enterprise Modernization Project | Non-Public",
+    category: "Enterprise Backend Engineering",
+    description: "Led the migration of legacy C#/.NET monolithic applications to modern Spring Boot-based microservices architecture, improving performance, scalability, and maintainability for business-critical airline systems at Accelya.",
+    problem: "Legacy C#/.NET monolithic systems were difficult to scale, causing performance bottlenecks under high load. Tight coupling made maintenance challenging and slowed down feature delivery. Technical debt accumulated over years hindered innovation.",
+    solution: "Designed and implemented Spring Boot microservices architecture with clean separation of concerns. Migrated core business logic to Java, integrated with Oracle and PostgreSQL databases using Spring Data JPA. Built RESTful APIs following enterprise best practices. Implemented comprehensive testing and gradual rollout strategy.",
+    impact: "Achieved approximately 40% performance improvement under peak load. Enhanced system scalability to handle growing transaction volumes. Reduced technical debt and improved code maintainability. Enabled faster feature development with independent service deployment.",
     technologies: {
-      backend: ["Flask 2.3.2", "spaCy 3.6.0 (NLP)", "pandas 2.0.3", "PyPDF2 3.0.1", "Gunicorn 21.2.0 (Production Server)"],
-      frontend: ["Tailwind CSS", "Alpine.js", "Font Awesome 6", "Responsive Design"],
-      ml: ["Cosine Similarity Algorithm", "spaCy NLP Pipeline", "matplotlib 3.7.2", "Data Analytics"]
+      backend: ["Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Microservices Architecture"],
+      databases: ["Oracle", "PostgreSQL"],
+      apis: ["RESTful API Design", "API Versioning", "Error Handling"],
+      architecture: ["Clean Architecture", "Domain-Driven Design", "Service Decomposition"]
     },
     features: [
-      "Automated PDF processing and intelligent text extraction from resumes",
-      "Advanced entity extraction using NLP (names, organizations, locations, dates)",
-      "Technical and soft skills assessment with scoring algorithms",
-      "Enterprise-grade analytics dashboard with 4-chart comprehensive visualizations",
-      "AI-powered candidate recommendations using cosine similarity matching",
-      "Bulk resume processing for high-volume recruitment scenarios"
+      "Migrated monolithic C#/.NET applications to Spring Boot microservices",
+      "~40% performance improvement through optimized architecture",
+      "Scalable REST API design with versioning and comprehensive error handling",
+      "Database integration with Oracle and PostgreSQL using Spring Data JPA",
+      "Clean architecture with clear separation of concerns",
+      "Reduced technical debt and improved maintainability"
     ],
-    image: "/projects/resume-analyzer.jpg"
+    liveLink: null,
+    isInternal: true
+  },
+  {
+    title: "Enterprise Backend Services with Spring Boot",
+    subtitle: "Production Systems | Non-Public",
+    category: "Enterprise Backend Engineering",
+    description: "Designed and developed multiple scalable backend services using Java and Spring Boot, integrated with enterprise databases (Oracle, PostgreSQL) and secured with OAuth2/JWT authentication for business-critical operations at Accelya.",
+    problem: "Business teams required new backend services to support airline operations, revenue management, and partner integrations. Services needed to be secure, performant, and maintainable while handling high-volume transactions.",
+    solution: "Built production-ready Spring Boot backend services following clean architecture principles. Implemented secure RESTful APIs with OAuth2/OIDC authentication, JWT validation, and fine-grained RBAC. Integrated with Oracle and PostgreSQL databases. Designed for horizontal scalability and high availability.",
+    impact: "Delivered multiple production services supporting critical airline operations. Ensured enterprise-grade security and compliance. Maintained high service availability and performance. Enabled seamless integration with partner systems.",
+    technologies: {
+      backend: ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "REST APIs"],
+      databases: ["Oracle Database", "PostgreSQL"],
+      security: ["OAuth2", "JWT", "RBAC", "API Security"],
+      tools: ["Maven", "Git", "IntelliJ IDEA"]
+    },
+    features: [
+      "Production-ready Spring Boot backend services for airline operations",
+      "Secure REST API implementation with OAuth2/JWT authentication",
+      "Fine-grained role-based access control (RBAC)",
+      "Enterprise database integration (Oracle, PostgreSQL)",
+      "Clean architecture with testable, maintainable code",
+      "High availability and horizontal scalability design"
+    ],
+    liveLink: null,
+    isInternal: true
+  },
+  {
+    title: "DETR - Pest Detection & Prediction System",
+    subtitle: "Full-Stack AI/ML Application | Live Demo",
+    category: "AI/ML & Full-Stack Development",
+    description: "Full-stack AI-powered web application for agricultural pest detection and prediction, featuring real-time object detection using YOLO models and predictive analytics. Demonstrates backend API design and ML model integration skills.",
+    problem: "Agricultural professionals needed an accessible tool for early pest detection and outbreak prediction to prevent crop damage and optimize intervention timing.",
+    solution: "Built full-stack application with Flask backend serving YOLO-based object detection model and scikit-learn prediction engine. Designed RESTful APIs for image processing and prediction. Developed responsive Next.js frontend with real-time visualizations.",
+    impact: "Achieved 90%+ detection accuracy. Enabled farmers to identify pest threats early. Provided data-driven forecasting for intervention planning. Demonstrates ability to integrate ML models with production-ready backend APIs.",
+    liveLink: "https://detr-pest-prediction.vercel.app/",
+    technologies: {
+      frontend: ["Next.js 14.2.5", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      backend: ["Flask 3.1.2", "Python", "RESTful APIs"],
+      ml: ["YOLO (Ultralytics)", "scikit-learn", "OpenCV", "Computer Vision"]
+    },
+    features: [
+      "Real-time AI-powered pest detection using YOLO (90%+ accuracy)",
+      "Predictive analytics for pest outbreak forecasting",
+      "Scalable REST API for ML model serving",
+      "Responsive frontend with data visualizations",
+      "Image processing pipeline with annotated results"
+    ],
+    isInternal: false
+  },
+  {
+    title: "TalentInsight AI - Recruitment Intelligence Platform",
+    subtitle: "NLP & Backend System | Live Demo",
+    category: "AI/ML & Backend Development",
+    description: "AI-powered resume analysis platform with advanced NLP for entity extraction, skills assessment, and candidate matching. Showcases backend API design, data processing, and NLP integration capabilities.",
+    problem: "Recruitment teams needed automated tools to process high volumes of resumes, extract relevant information, and match candidates to job requirements efficiently.",
+    solution: "Built Flask-based backend with spaCy NLP pipeline for entity extraction and skills assessment. Implemented cosine similarity algorithm for candidate matching. Designed data processing workflows for PDF parsing and text analysis. Created analytics dashboard for insights visualization.",
+    impact: "Automated resume screening process. Enabled bulk processing for high-volume recruitment. Provided data-driven candidate recommendations. Demonstrates expertise in backend data processing and NLP integration.",
+    liveLink: "https://talentinsightai.up.railway.app/",
+    technologies: {
+      backend: ["Flask", "Python", "RESTful APIs", "Gunicorn"],
+      nlp: ["spaCy", "NLP Pipeline", "Entity Extraction", "Cosine Similarity"],
+      dataProcessing: ["pandas", "PyPDF2", "Text Processing"],
+      frontend: ["Tailwind CSS", "Alpine.js", "Data Visualization"]
+    },
+    features: [
+      "Automated PDF processing and intelligent text extraction",
+      "Advanced NLP-based entity extraction (names, organizations, skills)",
+      "Skills assessment with scoring algorithms",
+      "AI-powered candidate matching using cosine similarity",
+      "Analytics dashboard with comprehensive visualizations",
+      "Bulk resume processing capability"
+    ],
+    isInternal: false
   },
   {
     title: "Bloggy - Full-Stack Content Management Platform",
-    description: "Scalable full-stack blog platform built with MERN stack demonstrating enterprise-level authentication, data management, and modern UI/UX principles. Features secure user authentication, rich content editing, media management, and role-based content organization. Showcases expertise in building production-ready web applications with modern frontend frameworks and robust backend architecture.",
+    subtitle: "MERN Stack Application | Live Demo",
+    category: "Full-Stack Web Development",
+    description: "Full-stack blog platform built with MERN stack, demonstrating secure authentication, RESTful API design, and database-driven backend development with Node.js and MongoDB.",
+    problem: "Needed to demonstrate full-stack capabilities including backend API development, secure authentication, database design, and modern frontend integration.",
+    solution: "Built MERN stack application with Express.js backend and MongoDB database. Implemented secure authentication with bcrypt password hashing. Designed RESTful APIs for content management, user profiles, and media uploads. Created React frontend with routing and state management.",
+    impact: "Production-ready full-stack application demonstrating backend API design, database modeling, authentication systems, and modern web development practices.",
     liveLink: "https://bloggy-live-app.onrender.com/",
     technologies: {
-      frontend: ["React 18.2.0", "React Router DOM 6.4.4", "Axios (HTTP Client)", "CSS3", "Responsive Design"],
-      backend: ["Node.js", "Express.js 4.18.2", "MongoDB (NoSQL Database)", "Mongoose 6.7.5", "bcrypt (Password Hashing)", "Multer (File Upload)"]
+      frontend: ["React 18.2.0", "React Router DOM", "Axios", "CSS3"],
+      backend: ["Node.js", "Express.js", "REST APIs", "Multer"],
+      database: ["MongoDB", "Mongoose"],
+      security: ["bcrypt Password Hashing", "Session Management"]
     },
     features: [
-      "Secure user authentication with bcrypt password hashing and session management",
-      "Rich text editor for professional blog post creation and content management",
-      "Scalable image upload and media management system using Multer",
-      "Category-based content organization for improved discoverability",
-      "Customizable user profiles with role-based access control",
-      "Advanced filtering: posts by user, category, and search functionality",
-      "Fully responsive design optimized for all devices"
+      "Secure user authentication with bcrypt and session management",
+      "RESTful API design for content management",
+      "MongoDB database with Mongoose ODM",
+      "Image upload and media management system",
+      "Category-based content organization",
+      "User profiles and role-based access control"
     ],
-    image: "/projects/bloggy.jpg"
+    isInternal: false
   }
 ];
 
